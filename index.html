@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fauzi-API-Space X</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+   
+        <link href="style.css" rel="stylesheet" />
+      
+        <script src="javascript.js" defer></script>
+        
+	</head>
+	<body>  
+    <div id="parent">
+
+            <article class="welkomstekst">
+                <h1> Space X Landingsplan</h1>
+                    <ul>
+                        <li id="listitem">Welkom terug we hopen dat je een fijne reis hebt gehad!</li>
+                        <br>
+                        <li>Gebruik de Map om de locatie van de school te zien  </li>
+                        <li>Gebruik het Weer-tool voor de weersversverwachting </li>
+                        
+                
+                    </ul>
+            </article>
+      <div id="son">
+
+            <article class="mapcontainer">
+                <h1>Map</h1>
+                <div id="map"></div>
+                <script src="https://npmcdn.com/@turf/turf@5.1.6/turf.min.js"></script>
+
+            </article>
+             <article class="weercontainer">
+                <div class="weer">
+                    <h1>Weersverwachting</h1>
+                    <div class="icoon"><img id="weerIcoon" src="icons/unknown.png"></div>
+                    <div class="temperatuur">Temperatuur</div>
+                    <div class="beschrijving">Beschrijving</div>
+                    <div class="locatie">Locatie</div>
+
+                </div>
+                <div class="weerzoekbalk">
+                     <input type="text" class="inputTekst" placeholder="Amsterdam">
+                     <input type="submit" class="knop" value="Zoeken">
+                </div>
+            </article>
+       </div>
+    </div>   
+	</body>
+</html>
